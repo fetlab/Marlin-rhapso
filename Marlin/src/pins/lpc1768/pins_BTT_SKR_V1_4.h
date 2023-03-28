@@ -66,7 +66,7 @@
 #define Y_DIAG_PIN                         P1_28  // Y-STOP
 #define Z_DIAG_PIN                         P1_27  // Z-STOP
 #define E0_DIAG_PIN                        P1_26  // E0DET
-#define E1_DIAG_PIN                        P1_25  // E1DET
+#define I_DIAG_PIN                         P1_25  // E1DET
 
 //
 // Limit Switches
@@ -138,7 +138,7 @@
 // Filament Runout Sensor
 //
 #define FIL_RUNOUT_PIN                     P1_26  // E0DET
-#define FIL_RUNOUT2_PIN                    P1_25  // E1DET
+//#define FIL_RUNOUT2_PIN                    P1_25  // E1DET
 
 //
 // Power Supply Control
@@ -185,11 +185,11 @@
   #define E0_CS_PIN                        P1_04
 #endif
 
-#define E1_STEP_PIN                        P1_15
-#define E1_DIR_PIN                         P1_14
-#define E1_ENABLE_PIN                      P1_16
-#ifndef E1_CS_PIN
-  #define E1_CS_PIN                        P1_01
+#define I_STEP_PIN                        P1_15
+#define I_DIR_PIN                         P1_14
+#define I_ENABLE_PIN                      P1_16
+#ifndef I_CS_PIN
+  #define I_CS_PIN                        P1_01
 #endif
 
 #define TEMP_1_PIN                      P0_23_A0  // A0 (T0) - (67) - TEMP_1_PIN
@@ -222,7 +222,7 @@
   //#define Z_HARDWARE_SERIAL  Serial1
   //#define Z2_HARDWARE_SERIAL Serial1
   //#define E0_HARDWARE_SERIAL Serial1
-  //#define E1_HARDWARE_SERIAL Serial1
+  //#define I_HARDWARE_SERIAL  Serial1
   //#define E2_HARDWARE_SERIAL Serial1
   //#define E3_HARDWARE_SERIAL Serial1
   //#define E4_HARDWARE_SERIAL Serial1
@@ -239,8 +239,8 @@
   #define E0_SERIAL_TX_PIN                 P1_04
   #define E0_SERIAL_RX_PIN      E0_SERIAL_TX_PIN
 
-  #define E1_SERIAL_TX_PIN                 P1_01
-  #define E1_SERIAL_RX_PIN      E1_SERIAL_TX_PIN
+  #define I_SERIAL_TX_PIN                 P1_01
+  #define I_SERIAL_RX_PIN       I_SERIAL_TX_PIN
 
   // Reduce baud rate to improve software serial reliability
   #define TMC_BAUD_RATE                    19200
